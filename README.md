@@ -35,16 +35,14 @@ For an example of the web output, markdown cheatsheets, and details on things li
 - The `toc.yml` files in `articles/<guide>` determine the order of articles in the site.
 - The `toc.yml` files in `pdf/<guide>` determine the order of articles in the PDF.
 
-
-
 ## Other sample DocFx documentation projects
-## Starter project
+### Starter project
 - Create a directory for your project.
 - Inside that directory, open Windows Command Prompt.
 - Run `docfx init -q`.
 
 ### Sample project
-- Clone [DocFx seed](https://github.com/docascode/docfx-seed](https://github.com/docascode/docfx-seed).
+- Clone [DocFx seed](https://github.com/docascode/docfx-seed).
 
 ### Walkthroughs
 See [DocFx walkthroughs](https://dotnet.github.io/docfx/tutorial/walkthrough/walkthrough_overview.html).
