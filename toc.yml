@@ -1,0 +1,8 @@
+ - name: Articles
+   href: articles/
+ - name: API
+   href: restapi/
+ - name: HC Community
+   href: https://community.healthcatalyst.com
+ - name: Support
+   href: articles/includes/support.md
