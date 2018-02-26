@@ -1,0 +1,625 @@
+/* Body to HC colors */
+body {
+  color: #333333;
+  font-size: 15px;
+}
+
+/* Headings */
+article h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+article h2 {
+  font-size: 22px;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: #006D9A;
+  margin-top: 28px;
+}
+
+article h3 {
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 22px;
+}
+
+article h4 {
+  font-size: 17px;
+  line-height: 1.313em;
+  font-weight: 600;
+  color: #006D9A;
+  border-bottom: none;
+  margin-top: 20px;
+}
+
+article h5 {
+  font-size: 15px;
+  line-height: 1.25em;
+  font-weight: 600;
+  color: #006D9A;
+  margin-top: 17px;
+}
+
+article h6 {
+  font-size: 14px;
+  line-height: 1.25em;
+  font-weight: 600;
+  color: #006D9A;
+  margin-top: 14px;
+}
+
+/* In-copy links */
+button, a {
+  color: #006D9A;
+}
+
+/* hover links */
+button:hover, button:focus, a:hover, a:focus {
+  color: #384655;
+}
+
+a:focus, a:hover {
+  color: #384655;
+}
+
+/* Bold */
+b, optgroup, strong {
+  font-weight: 600;
+}
+
+/* Bullets */
+article > ul > li > p {
+  margin-top: 6px;
+}
+
+article > ul > li {
+  margin-top: 6px;
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 5px solid #F0F3F6;
+  font-size: 15px;
+}
+
+/* Images */
+.article img {
+  max-width: 100%;
+  border: solid;
+  border-width: thin;
+  border-color: #D7DDE4;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-left: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+/* Clickability fix for selector on sm devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  article h1:first-of-type:before {
+    height: 0;
+    margin-top: 0;
+  }  
+}
+
+#search {
+  border: none;
+}
+
+.fa-code {
+  font-size: 19px;
+}
+
+/* TOC */
+.toc .level1 > li {
+  font-weight: normal;
+  font-size: 15px;
+ }
+ 
+ .toc ul {
+  margin-top: 17px;  
+ }
+
+ .toc .nav > li > a {
+   color: #6D6E70;
+   padding-top: 10px;
+   line-height: 1.2;
+ }
+
+ .toc .nav > li.active > a {
+   color: #006D9A;
+   border-bottom-width: 4px;
+ }
+
+ .toc-filter > input {
+  font-size: 14px;
+  color: #6D6E70;
+}
+
+/* little plus or minus in TOC */
+.expand-stub
+{
+  margin-top: 6px;
+}
+
+ /* 2nd and 3rd level expandable menu items in left-side menu - make same font size as 1st level */
+ .toc .level2, .toc .level3 {
+  font-size: 14px;
+}
+
+.toc .level3 {
+  padding-left: 5px;
+  margin-top: 0px;
+}
+
+.toc ul {
+  margin-top: 0px;
+}
+
+.sidetoc,
+body .toc,
+.sidefilter,
+.sidetoggle { 
+  background-color: #F0F3F6; 
+}
+
+/*.sidetoc {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}*/
+
+body .toc {
+  overflow-x: unset;
+}
+
+.sidenav,
+.toc-toggle {
+  padding: 0;
+}
+
+.sidetoggle {
+  padding-bottom: 15px;
+}
+
+/* Code */
+code {
+  color: #006D9A;
+  background-color: #f8f9fb;
+  border-color: #F0F3F6;
+}
+
+pre {
+  background-color: #f8f9fb;
+  border-color: #F0F3F6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Text inside some types of pre blocks */
+.bash .hljs-shebang, .hljs-comment, .java .hljs-javadoc, .javascript .hljs-javadoc, .rust .hljs-preprocessor {
+  color: #6D6E70;
+}
+
+/* Tables */
+
+/*
+.table {
+  margin-bottom: 30px;
+}*/
+
+.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 5px 5px 0;
+  border-bottom: 1px solid #D7DDE4;
+  font-size: 14px;
+}
+
+th {
+  font-weight: 600;
+  color: #006D9A;
+}
+
+.table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+  border-bottom: 1px solid #D7DDE4;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+td:nth-of-type(1) {
+  font-weight: 600;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+  background-color: white;
+}
+
+/* Callouts */
+.alert-danger, .alert-info, .alert-warning {
+  background-color: #e8f6ff;
+  border: none;
+  color: #333333;
+  margin-top: 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #f0f3f6;
+}
+
+/* Edit button */
+.btn-warning {
+  background-color: #00AEFF;
+}
+
+
+
+/* Remove center align from Navbar and Collapsible section */
+.collapse.in,
+.collapsing {
+  text-align: unset;
+}
+
+@media (min-width: 768px) {
+  .sidetoc, .sidefilter {
+    margin-left: -15px;
+    border-right: none;
+    border-left: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    text-align: center !important;
+  }
+
+  .navbar-collapse li .active {
+    border-radius: 20px;
+  }
+}
+
+/* Collapsible Sections
+   ------------------------------------------------------- */
+.expander:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e260";
+    margin-left: 5px;
+    color: grey;
+    font-size: small;
+}
+
+.expander.collapsed:after {
+    content: "\e259";
+}
+
+/* Floating buttons
+   ------------------------------------------------------- */
+.fab {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 11px 0 0 0;
+    border: none;
+    outline: none;
+    color: #FFF;
+    border-radius: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+}
+
+.fab + .fab {
+  margin-right: 15px;
+}
+
+.contribution-panel {
+    z-index: 1000;
+    position: fixed;
+    right: 30px;
+    top: 70px;
+}
+
+/* Bootstrap docs like sidebar
+   ------------------------------------------------------- */
+.affix h5 {
+  display: none;
+}
+
+/* active & hover links */
+.affix ul > li > a:hover,
+.affix ul > li.active > a,
+.affix ul > li > a:focus {
+  color: #006D9A;                 
+  text-decoration: none;          
+  background-color: transparent;  
+  border-left-color: #006D9A; 
+}
+
+/* all active links */
+.affix ul > li.active > a, 
+.affix ul > li.active:hover > a,
+.affix ul > li.active:focus >a {
+    font-weight: 700;
+}
+
+/* nested active links */
+.affix ul ul > li.active > a, 
+.affix ul ul > li.active:hover > a,
+.affix ul ul > li.active:focus > a {
+    font-weight: 500;
+}
+
+/* all links */
+.affix ul > li > a {
+  color: #999;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-left: 20px;
+  padding-right: 40px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* nested links */
+.affix ul ul > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 12px;
+}
+
+/* hide inactive nested list */
+.affix ul ul {
+  display: none;
+}
+
+/* show active nested list */
+.affix ul > li.active > ul {
+  display: block;
+}
+
+.affix > ul > li > a:before {
+  content: '';
+}
+
+.affix ul ul > li > a:before {
+  content: '';
+}
+
+/* Navbar Hamburger
+   ------------------------------------------------------- */
+.icon-bar {
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .icon-bar:nth-of-type(2) {
+    transform: rotate(-45deg) translate(-4px, 5px) ;
+}
+
+/* Fade out the second bar */
+.change .icon-bar:nth-of-type(3) {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .icon-bar:nth-of-type(4) {
+    transform: rotate(45deg) translate(-4px, -5px) ;
+}
+
+/* Custom Navbar
+   ------------------------------------------------------- */
+.navbar-inverse {
+  background-color: #384655;
+  border-color: #384655;
+}
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #e8f6ff;
+}
+.navbar-inverse .navbar-text {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #d9d9d9;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+/*  border-bottom: 4px solid #00AEFF; */
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
+/*    border-bottom: 4px solid #00AEFF;  */
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
+/*    border-bottom: 4px solid #00AEFF;  */
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #384655;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #384655;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border: none;
+}
+.navbar-inverse .navbar-link {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-link:hover {
+  color: #e8f6ff;
+}
+
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #e8f6ff;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #e8f6ff;
+    background-color: #384655;
+  }
+}
+
+/* Buffer between top-left icon and menu tabs
+.navbar .navbar-nav {
+  margin-left: 50px;
+}
+*/
+
+/* Unhide bottom portion of right-column menu */
+.affix > ul.level1 {
+  overflow: visible;
+}
+
+/* Reduce horizontal width of center column */
+.col-md-10 {
+  width: 75%;
+}
+
+/* Move right pane to the left a little */
+.col-md-2 {
+  padding-left: 0px;
+}
+
+/* Move right pane to the left so it is not squished on the right */
+.nav > li > a {
+  margin-left: 0px;
+}
+
+/* Increase font size top-level nav bar menu items */
+.navbar-nav > li > a {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+/* Height of top navbar
+.navbar-collapse.collapse {
+  height: 60px;
+}
+*/
+
+.nav > li > a {
+  margin-left: 35px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+/* Secondary navbar */
+.navbar {
+  border: none;
+}
+
+.navbar-default {
+  background-color: #D7DDE4 !important;
+}
+
+
+/* Align Improve this Doc with top of each page's title heading and top of left column TOC */
+.sideaffix {
+  margin-top: 70px;
+}
+
+/* Contribution link */
+.sideaffix > div.contribution > ul > li > a.contribution-link {
+  padding-left: 22px;
+}
+
+/* Logo left top */
+/* svg*/
+svg {
+  height: 60px;
+  background-color: #00AEFF;
+  border-left: 17px solid #00aeff;
+  border-right: 17px solid #00aeff;
+  border-top: 10px solid #00aeff;
+  border-bottom: 17px solid #00aeff;
+  margin-left: -17px !important;
+}
+
+.navbar-brand > img {
+  height: 60px;
+  margin-left: -17px;
+}
+
+/* Search form */
+.form-control {
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.form-control:focus {
+  border-color: #00AEFF;
+}
+
+.form-control, output {
+  color: #6D6E70;
+}
+
+/* Search results */
+.sr-item > .item-href {
+  color: #00AEFF;
+}
+
+.pagination > .active > a {
+  background-color: #00AEFF;
+  border-color: #00AEFF;
+}
+
+.pagination > li > a {
+  color: #D7DDE4;
+}
+
+.pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+  color: #6D6E70;
+  border-color: #D7DDE4;
+}
+
+/* Filter bar */
+.toc-filter {
+  margin-top: 12px;
+  color: #6D6E70;
+}
+
+.toc .nav > li > a:hover, .toc .nav > li > a:focus {
+  color: #384655;
+}

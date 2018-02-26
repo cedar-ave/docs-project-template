@@ -1,0 +1,8 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "npm depenencies for DOS documentation",
+  "dependencies": {
+    "font-awesome": "4.7.0"
+  }
+}
