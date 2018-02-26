@@ -1,0 +1,91 @@
+h1 {
+    font-weight: 200;
+    font-family: 'Segoe UI' !important;
+    page-break-after: avoid;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #007bb8;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    font-family: 'Segoe UI' !important;
+    text-transform: none;
+    page-break-after: avoid;   
+/*    letter-spacing: 0px;*/
+}
+
+.pb_after_avoid {
+    page-break-after: avoid !important;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    color: #007bb8;
+    font-size: 1.15em;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 1em;
+    color: #007bb8;
+    font-weight: 600;
+}
+
+html {
+    padding: 50px;
+}
+
+b,
+strong {
+    font-weight: 600 !important;
+}
+
+img {
+    border: solid;
+    border-width: thin;
+    border-color: #D7DDE4;
+}
+
+a {
+    color: #007bb8; 
+}
+
+table th {
+    text-align: left;
+    font-size: .8em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: #384655;
+}
+
+table>tbody>tr>td,
+table>tbody>tr>th,
+table>tfoot>tr>td,
+table>tfoot>tr>th,
+table>thead>tr>td,
+table>thead>tr>th {
+  vertical-align: top;
+}
+
+table>thead>tr>th {
+    padding: .75em;
+    vertical-align: bottom;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #e3e3e3;
+}
+
+td:nth-of-type(1) {
+    font-weight: 600;
+}

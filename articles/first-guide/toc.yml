@@ -1,0 +1,10 @@
+ - name: Category 1
+   items:
+   - name: Article 1
+     href: article-1.md
+   - name: Article 2
+     href: article-2.md
+ - name: Category 2
+   items:
+   - name: Article 3
+     href: article-3.md

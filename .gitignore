@@ -1,0 +1,21 @@
+###############
+#    folder   #
+###############
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+_site
+_site_pdf
+
+# User-specific files
+*.pdf
+*.docx
+*.zip
+
+# Files for project/API doc builds
+_exported_templates/
+api/*
+src/*
+obj/*
