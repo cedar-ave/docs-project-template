@@ -47,8 +47,8 @@
           "images/**",
           "articles/**/media/**",
           "templates/media/**",
-          "node_modules/font-awesome/css/font-awesome.min.css",
-          "node_modules/font-awesome/fonts/*",
+          "resources/font-awesome/css/font-awesome.min.css",
+          "resources/font-awesome/fonts/*",
           "web.config",
           "resources/logo.svg",
           "resources/favicon.ico"
@@ -134,8 +134,8 @@
         "files": [
           "images/**",
           "articles/**/media/**",
-          "node_modules/font-awesome/css/font-awesome.min.css",
-          "node_modules/font-awesome/fonts/*"
+          "resources/font-awesome/css/font-awesome.min.css",
+          "resources/font-awesome/fonts/*"
         ],
         "exclude": [
           "**/bin/**",
