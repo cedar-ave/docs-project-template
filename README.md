@@ -1,4 +1,4 @@
-This starter Markdown documentation project supports Health Catalyst teams that want to begin managing their documentation as Markdown files. It uses the open-source tool [DocFx](https://dotnet.github.io/docfx) to generate a website and PDFs. The output is styled to align with Health Catalyst UI and print standards.
+This starter Markdown documentation project supports Health Catalyst teams that want to begin managing their documentation as Markdown files. It uses the open-source tool [DocFx](https://dotnet.github.io/docfx) (supported on Linux, macOS, and Windows) to generate a website and PDFs. The output is styled to align with Health Catalyst UI and print standards.
 
 For an example of the web output, markdown cheatsheets, and details on things like icons, callouts, styles, etc., see [platformdocs.healthcatalyst.com](https://platformdocs.healthcatalyst.com).
 
