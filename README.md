@@ -38,12 +38,12 @@ For an example of the web output, markdown cheatsheets, and details on things li
 - The `toc.yml` files in `articles/<guide>` determine the order of articles in the site.
 - The `toc.yml` files in `pdf/<guide>` determine the order of articles in the PDF.
 
-### If you want to use [Font Awesome](https://fontawesome.com) icons
-Font Awesome is the icon font used in Catalyst apps.
+### If you want to use Font Awesome icons
+[Font Awesome](https://fontawesome.com) is the icon font used in Catalyst apps.
 - Install [Node.js](https://nodejs.org).
 - Open Windows Command Prompt. Enter `cd` followed by the filepath to your directory. For example, `cd C:\docs-project-template`.
 - Enter `npm install --save`.
-- How to include an icon in a Markdown file: `<i class="fa fa-plus"></i>` (in this example, replace `fa-plus` with `fa-<name of icon>` found in this [cheatsheet](https://fontawesome.com/cheatsheet))
+- How to include an icon in a Markdown file: `<i class="fa fa-plus"></i>` (in this example, replace `fa-plus` with `fa-name-of-icon>` found in this [cheatsheet](https://fontawesome.com/cheatsheet))
 
 ## Other sample DocFx documentation projects
 ### Starter project
