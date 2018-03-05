@@ -1,6 +1,8 @@
-This starter Markdown documentation project supports Health Catalyst teams that want to begin managing their documentation as Markdown files. It uses the open-source tool [DocFx](https://dotnet.github.io/docfx) (supported on Linux, macOS, and Windows) to generate a website and PDFs. The output is styled to align with Health Catalyst UI and print standards.
+This starter Markdown documentation project supports Health Catalyst teams that want to begin managing their documentation as Markdown files. It uses the open-source tool [DocFx](https://dotnet.github.io/docfx) to generate a website and PDFs. The output is styled to align with Health Catalyst UI and print standards.
 
-For an example of the web output, markdown cheatsheets, and details on things like icons, callouts, styles, etc., see [platformdocs.healthcatalyst.com](https://platformdocs.healthcatalyst.com).
+For an example of the web output, Markdown cheatsheets, and details on things like icons, callouts, styles, etc., see [platformdocs.healthcatalyst.com](https://platformdocs.healthcatalyst.com).
+
+The following instructions apply to Windows, but DocFx and this project are also supported on Linux and macOS.
 
 ## Install DocFx
 - Create a folder in `C:\Program Files` called `docfx`.
@@ -60,6 +62,6 @@ See [DocFx walkthroughs](https://dotnet.github.io/docfx/tutorial/walkthrough/wal
 ## Complication with the PDF title pages
 The table of contents is always page 1. If you want a title page, create the title page as page 2 and use this script to flip the them.
 - Install [PDFtk Free](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit).
-- Install Windows Git. This installs Git Bash, which allows you to run the Bash script that flips the pages.
+- Install [Windows Git](https://git-scm.com/download). This installs Git Bash, which allows you to run the Bash script that flips the pages.
 - Open Git Bash and `cd` to your docs directory. Enter `./pdf-flip.sh`.
 - Find the flipped PDF in `_site_pdf`. Its filename is prepended with today's date.
