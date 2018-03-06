@@ -40,7 +40,7 @@ The following instructions apply to Windows, but DocFx and this project are also
 - The `toc.yml` files in `articles/<guide>` determine the order of articles in the site.
 - The `toc.yml` files in `pdf/<guide>` determine the order of articles in the PDF.
 
-### If you want to use Font Awesome icons
+## If you want to use Font Awesome icons
 [Font Awesome](https://fontawesome.com) is the icon font used in Catalyst apps.
 - Install [Node.js](https://nodejs.org).
 - Open Windows Command Prompt. Enter `cd` followed by the filepath to your directory. For example, `cd C:\docs-project-template`.
