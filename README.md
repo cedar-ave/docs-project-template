@@ -45,7 +45,7 @@ The following instructions apply to Windows, but DocFx and this project are also
 - Install [Node.js](https://nodejs.org).
 - Open Windows Command Prompt. Enter `cd` followed by the filepath to your directory. For example, `cd C:\docs-project-template`.
 - Enter `npm install --save`.
-- How to include an icon in a Markdown file: `<i class="fa fa-plus"></i>` (in this example, replace `fa-plus` with `fa-name-of-icon>` found in this [cheatsheet](https://fontawesome.com/cheatsheet))
+- How to include an icon in a Markdown file: `<i class="fa fa-plus"></i>` (in this example, replace `fa-plus` with `fa-name-of-icon` found in this [cheatsheet](https://fontawesome.com/cheatsheet))
 
 ## Other sample DocFx documentation projects
 ### Starter project
