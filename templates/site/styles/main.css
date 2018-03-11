@@ -1,49 +1,53 @@
 /* Body to HC colors */
 body {
-  color: #333333;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 400;
   font-size: 15px;
 }
 
 /* Headings */
 article h1 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 300;
+  line-height: 1.2;
   margin-top: 40px;
-  margin-bottom: 20px;
-  color: #333333;
+  margin-bottom: 35px;
+  color: #333;
 }
 
 article h2 {
-  font-size: 22px;
-  line-height: 1.5em;
+  font-size: 28px;
   font-weight: 600;
-  color: #006D9A;
-  margin-top: 28px;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 35px;
 }
 
 article h3 {
-  font-size: 20px;
-  line-height: 1.5em;
+  font-size: 22px;
   font-weight: 600;
-  color: #333333;
-  margin-top: 22px;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 35px;
 }
 
 article h4 {
-  font-size: 17px;
-  line-height: 1.313em;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
   font-weight: 600;
-  color: #006D9A;
   border-bottom: none;
-  margin-top: 20px;
+  margin-top: 35px;
+  margin-bottom: 10px;
 }
 
 article h5 {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.25em;
   font-weight: 600;
-  color: #006D9A;
-  margin-top: 17px;
+  color: #333;
+  margin-top: 35px;
 }
 
 article h6 {
@@ -75,11 +79,74 @@ b, optgroup, strong {
 
 /* Bullets */
 article > ul > li > p {
-  margin-top: 6px;
+  margin-top: 2px;
+  margin-bottom: 0px;
 }
 
 article > ul > li {
-  margin-top: 6px;
+  margin-top: 2px;
+  padding-left: 12px;
+  display: table;
+}
+
+article > ul > li > ul > li {
+  margin-top: 2px;
+}
+
+/* Bullets setup */
+article ol, ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+/* Primary bullets margin */
+article ul > li:before {
+  content: "•  ";
+  display: table-cell;
+  padding-right: 10px;
+}
+
+article ul > li:last-child {
+  padding-bottom: 10px;
+}
+
+/* Secondary bullets */
+article ul li ul li {
+  display: table;
+}
+article ul li ul li:before {
+  content: "–  ";
+  display: table-cell;
+  padding-right: 15px;
+}
+
+article ul li ul li:first-child {
+  padding-top: 7px;
+}
+
+article ul li ul li:last-child {
+  padding-bottom: 6px;
+}
+
+/* Tiertiary bullets */
+article ul li ul li ul li:before {
+  content: "- ";
+  display: table-cell;
+  padding-right: 10px;
+}
+
+/* Bullets inside tables */
+/*Primary level */
+table > tbody > tr > td > ul > li {
+  padding-right: 7px;
+  display: table;
+}
+
+/* Secondary level */
+table > tbody > tr > td > ul > li > ul > li {
+  padding-right: 15px;
+  display: table;
 }
 
 /* Blockquote */
@@ -94,8 +161,8 @@ blockquote {
   border: solid;
   border-width: thin;
   border-color: #D7DDE4;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Breadcrumb */
@@ -194,16 +261,25 @@ body .toc {
 
 /* Code */
 code {
-  color: #006D9A;
-  background-color: #f8f9fb;
+  color: #a94c9d;
+  background-color: #f1f1f1;
   border-color: #F0F3F6;
+  border-radius: 3px;
+  padding-top: 3px;
+  padding-right: 7px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+  line-height: 1.4;
 }
 
 pre {
-  background-color: #f8f9fb;
-  border-color: #F0F3F6;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border: 1px solid #a1a1a1;
+  padding: 20px;
+  margin: 16px auto;
+  border-radius: 5px;
+  display: block;
+  background-color: #f1f1f1;
+  font-weight: 400;
 }
 
 /* Text inside some types of pre blocks */
@@ -229,7 +305,7 @@ pre {
 
 th {
   font-weight: 600;
-  color: #006D9A;
+  color: #337ab7;
 }
 
 .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
@@ -263,8 +339,6 @@ td:nth-of-type(1) {
 .btn-warning {
   background-color: #00AEFF;
 }
-
-
 
 /* Remove center align from Navbar and Collapsible section */
 .collapse.in,
@@ -500,12 +574,6 @@ td:nth-of-type(1) {
   }
 }
 
-/* Buffer between top-left icon and menu tabs
-.navbar .navbar-nav {
-  margin-left: 50px;
-}
-*/
-
 /* Unhide bottom portion of right-column menu */
 .affix > ul.level1 {
   overflow: visible;
@@ -532,12 +600,6 @@ td:nth-of-type(1) {
   padding-top: 10px;
 }
 
-/* Height of top navbar
-.navbar-collapse.collapse {
-  height: 60px;
-}
-*/
-
 .nav > li > a {
   margin-left: 35px;
   padding-top: 15px;
@@ -553,7 +615,6 @@ td:nth-of-type(1) {
   background-color: #D7DDE4 !important;
 }
 
-
 /* Align Improve this Doc with top of each page's title heading and top of left column TOC */
 .sideaffix {
   margin-top: 70px;
@@ -565,14 +626,8 @@ td:nth-of-type(1) {
 }
 
 /* Logo left top */
-/* svg*/
 svg {
-  height: 60px;
-  background-color: #00AEFF;
-  border-left: 17px solid #00aeff;
-  border-right: 17px solid #00aeff;
-  border-top: 10px solid #00aeff;
-  border-bottom: 17px solid #00aeff;
+  height: 50px;
   margin-left: -17px !important;
 }
 
@@ -622,4 +677,21 @@ svg {
 
 .toc .nav > li > a:hover, .toc .nav > li > a:focus {
   color: #384655;
+}
+
+/* version dropdown */
+#breadcrumb {
+  float:left;
+}
+
+#version {
+  margin:5px 30px;
+  width: 200px;
+  float:right;
+  font-family: "Segoe UI",Tahoma,Helvetica,sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 4px;
+  color: #6d6e70;
+  border: none;
 }
