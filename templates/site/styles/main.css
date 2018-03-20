@@ -21,7 +21,7 @@ article h2 {
   font-weight: 600;
   line-height: 1.5;
   color: #333;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 article h3 {
@@ -29,7 +29,7 @@ article h3 {
   font-weight: 600;
   line-height: 1.5;
   color: #333;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 article h4 {
@@ -38,7 +38,7 @@ article h4 {
   color: #333;
   font-weight: 600;
   border-bottom: none;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
@@ -47,7 +47,7 @@ article h5 {
   line-height: 1.25em;
   font-weight: 600;
   color: #333;
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 article h6 {
@@ -58,18 +58,38 @@ article h6 {
   margin-top: 14px;
 }
 
+/* When H3 follows H2 */
+article h2 + h3 {
+  margin-top: 20px;
+}
+
+/* When H4 follows H3 */
+article h3 + h4 {
+  margin-top: 20px;
+}
+
+/* When blockquote follows H1 */
+article h1 + blockquote {
+  margin-top: 0px;
+}
+
+/* When a blockquote follows a table */
+table + blockquote {
+  margin-top: 15px;
+}
+
 /* In-copy links */
 button, a {
-  color: #006D9A;
+  color: #00aeff;
 }
 
 /* hover links */
 button:hover, button:focus, a:hover, a:focus {
-  color: #384655;
+  color: #33beff;
 }
 
 a:focus, a:hover {
-  color: #384655;
+  color: #33beff;
 }
 
 /* Bold */
@@ -79,18 +99,26 @@ b, optgroup, strong {
 
 /* Bullets */
 article > ul > li > p {
-  margin-top: 2px;
+/*  margin-top: 2px; */
   margin-bottom: 0px;
 }
 
 article > ul > li {
-  margin-top: 2px;
+/*  margin-top: 2px; */
   padding-left: 12px;
   display: table;
 }
 
+article > ul li ul li p {
+  margin-bottom: 0px;
+}
+
+article > ul li ul li ul li p {
+  margin-bottom: 0px;
+}
+
 article > ul > li > ul > li {
-  margin-top: 2px;
+/*  margin-top: 2px; */
 }
 
 /* Bullets setup */
@@ -114,6 +142,7 @@ article ul > li:last-child {
 /* Secondary bullets */
 article ul li ul li {
   display: table;
+/*  margin-top: 2px; */
 }
 article ul li ul li:before {
   content: "–  ";
@@ -153,6 +182,8 @@ table > tbody > tr > td > ul > li > ul > li {
 blockquote {
   border-left: 5px solid #F0F3F6;
   font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* Images */
@@ -289,10 +320,9 @@ pre {
 
 /* Tables */
 
-/*
 .table {
-  margin-bottom: 30px;
-}*/
+  margin-bottom: 20px;
+}
 
 .table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
   border-top: none;
@@ -305,7 +335,7 @@ pre {
 
 th {
   font-weight: 600;
-  color: #337ab7;
+  color: #006d9a;
 }
 
 .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
@@ -323,11 +353,69 @@ td:nth-of-type(1) {
 }
 
 /* Callouts */
-.alert-danger, .alert-info, .alert-warning {
-  background-color: #e8f6ff;
-  border: none;
-  color: #333333;
-  margin-top: 15px;
+.alert {
+  color: #333;
+  background-color: white;
+  border-top: #d7dde4 solid 1px;
+  border-right: #d7dde4 solid 1px;
+  border-bottom: #d7dde4 solid 1px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.alert h5 {
+  font-size: 18px;
+  text-transform: none;
+  padding-bottom: 5px;
+}
+
+.alert h5:before {
+  position:relative;
+  top:1px;
+  display:inline-block;
+  font-family:'FontAwesome';
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  margin-right: 8px;
+  font-weight: normal;
+}
+
+.alert-info h5 {
+  color: #6e53a3;
+}
+
+.alert-info h5:before {
+  content:"\f075";
+}
+
+.alert-info {
+  border-left: #6e53a3 solid 8px;
+}
+
+.alert-warning h5 {
+  color: #f8961d;
+}
+
+.alert-warning h5:before {
+  content:"\f071";
+}
+
+.alert-warning {
+  border-left: #f8961d solid 8px;
+}
+
+.alert-danger h5 {
+  color: #00aeff;
+}
+
+.alert-danger h5:before {
+  content:"\f05a";
+}
+
+.alert-danger {
+  border-left: #00aeff solid 8px;
 }
 
 /* Footer */
@@ -411,31 +499,31 @@ td:nth-of-type(1) {
 /* Bootstrap docs like sidebar
    ------------------------------------------------------- */
 .affix h5 {
-  display: none;
+    display: none;
 }
 
 /* active & hover links */
 .affix ul > li > a:hover,
 .affix ul > li.active > a,
 .affix ul > li > a:focus {
-  color: #006D9A;                 
+  color: #00aeff;                 
   text-decoration: none;          
   background-color: transparent;  
-  border-left-color: #006D9A; 
+  border-left-color: #00aeff;
 }
 
 /* all active links */
 .affix ul > li.active > a, 
 .affix ul > li.active:hover > a,
 .affix ul > li.active:focus >a {
-    font-weight: 700;
+  font-weight: 600;
 }
 
 /* nested active links */
 .affix ul ul > li.active > a, 
 .affix ul ul > li.active:hover > a,
 .affix ul ul > li.active:focus > a {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* all links */
@@ -483,17 +571,17 @@ td:nth-of-type(1) {
 
 /* Rotate first bar */
 .change .icon-bar:nth-of-type(2) {
-    transform: rotate(-45deg) translate(-4px, 5px) ;
+  transform: rotate(-45deg) translate(-4px, 5px) ;
 }
 
 /* Fade out the second bar */
 .change .icon-bar:nth-of-type(3) {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* Rotate last bar */
 .change .icon-bar:nth-of-type(4) {
-    transform: rotate(45deg) translate(-4px, -5px) ;
+  transform: rotate(45deg) translate(-4px, -5px) ;
 }
 
 /* Custom Navbar
@@ -623,6 +711,7 @@ td:nth-of-type(1) {
 /* Contribution link */
 .sideaffix > div.contribution > ul > li > a.contribution-link {
   padding-left: 22px;
+  font-weight: normal;
 }
 
 /* Logo left top */
@@ -643,7 +732,7 @@ svg {
 }
 
 .form-control:focus {
-  border-color: #00AEFF;
+  border-color: #006d9a;
 }
 
 .form-control, output {
@@ -676,7 +765,15 @@ svg {
 }
 
 .toc .nav > li > a:hover, .toc .nav > li > a:focus {
-  color: #384655;
+  color: #00aeff;
+}
+
+.toc .nav > li.active > a:hover, .toc .nav > li.active > a:focus {
+  color: #00aeff;
+}
+
+.toc .nav > li.active > a {
+  color: #00aeff;
 }
 
 /* version dropdown */
