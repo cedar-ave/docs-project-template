@@ -13,7 +13,7 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar">
       <form class="form-inline navbar-right">
-        <a href="https://docs.healthcatalyst.com/articles/includes/support.html" class="btn btn-outline-success" type="button" id="help"><span class="far fa-question-circle"></span></a>
+        <a href="/articles/includes/support.html" class="btn btn-outline-success" type="button" id="help"><span class="far fa-question-circle"></span></a>
       </form>
       <form class="navbar-form navbar-right" role="search" id="search">
         <div class="form-group">
