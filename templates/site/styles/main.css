@@ -240,6 +240,10 @@ blockquote {
    border-bottom-width: 4px;
  }
 
+.toc-filter {
+  border-radius: 0px;
+}
+
  .toc-filter > input {
   font-size: 14px;
   color: #6D6E70;
@@ -421,6 +425,8 @@ td:nth-of-type(1) {
 /* Footer */
 .footer {
   background-color: #f0f3f6;
+  border-top: none;
+  font-size: 14px;
 }
 
 /* Edit button */
@@ -729,6 +735,7 @@ svg {
 .form-control {
   background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
+  border-radius: 0px;
 }
 
 .form-control:focus {
@@ -782,13 +789,24 @@ svg {
 }
 
 #version {
-  margin:5px 30px;
-  width: 200px;
+  margin:5px 52px;
+  width: 210px;
   float:right;
   font-family: "Segoe UI",Tahoma,Helvetica,sans-serif;
   font-size: 14px;
   padding: 5px;
-  border-radius: 4px;
   color: #6d6e70;
   border: none;
+}
+
+/* Help button nav bar icon */
+#help {
+  font-size: 18px;
+  padding-left: 1px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 12px;
+  border-radius: 0px;
+  background-color: #384655;
+  color: white;
 }
