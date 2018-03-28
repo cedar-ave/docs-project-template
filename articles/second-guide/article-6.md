@@ -1,8 +1,8 @@
 ---
-uid: article-4.md
-title: Article 4
+uid: article-6.md
+title: Article 6
 ---
 
-# Article 4
+# Article 6
 
 Text
