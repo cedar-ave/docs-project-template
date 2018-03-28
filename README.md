@@ -21,29 +21,30 @@ The following instructions apply to Windows, but DocFx and this project are also
   - If you see values in a vertical list: Click **New** and paste `C:\Program Files\DocFX`. Click **New** again and paste `C:\Program Files\wkhtmltopdf\bin`.
 
 ## Build this project as a website
-- On [this project's Github page](https://github.com/HealthCatalyst/docs-project-template), click **Clone or download** > **Download ZIP**. Extract it. This is the directory you'll work in. Save it wherever is convenient, but don't save it in `C:\Program Files\docfx`.
-- Open Windows Command Prompt. Enter `cd` followed by the filepath to your directory. For example, `cd C:\docs-project-template`.
+- On [this project's Github page](https://github.com/HealthCatalyst/docs-project-template), click **Clone or download** > **Download ZIP**. Extract it to wherever is convenient. This is the directory you'll work in. Don't extract it to `C:\Program Files\docfx`. 
+- Open Windows Command Prompt. Enter `cd` followed by the filepath to your directory. For example, `cd C:\docs-project-template-master`.
 - Run `docfx build docfx.json --serve`.
 - In your browser, go to [http://localhost:8080](http://localhost:8080).
 
 ### For an easy internal website
-- Find the website files in the newly generated subdirectory `_site`.  
+- Find the website files in the newly generated subdirectory `\_site` in your directory.
 - Push the site to an Azure web app (see [Local Git Deployment to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/app-service-deploy-local-git)).
 - Set up authentication to be internal visitors only with Azure Active Directory (see [Configure your App Service app to use Azure Active Directory login](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication)).
 - Request a healthcatalyst.com or healthcatalyst.net domain name from IT (for example, mydocs.healthcatalyst.com).
 
 ## Generate PDFs
 - Run `docfx pdf` in Windows Command Prompt.
-- The PDFs are in the newly generated subdirectory `_site_pdf\docs-project-template_pdf`.
+- The PDFs are in the newly generated subdirectory `_site_pdf\docs-project-template-master_pdf` in your directory.
 
 ## How to change the order of articles
+- The `toc.yml` file in `articles` determines the tabs in the menu bar of the site.
 - The `toc.yml` files in `articles/<guide>` determine the order of articles in the site.
 - The `toc.yml` files in `pdf/<guide>` determine the order of articles in the PDF.
 
 ## If you want to use Font Awesome icons
 [Font Awesome](https://fontawesome.com) is the icon font used in Catalyst apps.
 - Install [Node.js](https://nodejs.org).
-- Open Windows Command Prompt. Enter `cd` followed by the filepath to your directory. For example, `cd C:\docs-project-template`.
+- Close and reopen Windows Command Prompt. Enter `cd` followed by the filepath to your directory. For example, `cd C:\docs-project-template-master`.
 - Enter `npm install --save`.
 - How to include an icon in a Markdown file: `<i class="fa fa-plus"></i>` (in this example, replace `fa-plus` with `fa-name-of-icon` found in this [cheatsheet](https://fontawesome.com/cheatsheet))
 
@@ -61,10 +62,18 @@ See [DocFx walkthroughs](https://dotnet.github.io/docfx/tutorial/walkthrough/wal
 
 ## Complication with the PDF title pages
 The table of contents is always page 1. If you want a title page, create the title page as page 2 and use this script to flip the them.
-- Install [PDFtk Free](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit).
-- Install [Windows Git](https://git-scm.com/download). This installs Git Bash, which allows you to run the Bash script that flips the pages.
-- Open Git Bash and `cd` to your docs directory. Enter `./pdf-flip.sh`.
-- Find the flipped PDF in `_site_pdf`. Its filename is prepended with today's date.
+- Install [PDFtk Free](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit). On the final window of the installer, choose not to open the program.
+- Close and reopen Windows Command Prompt. `cd` to your directory.
+- Install [Windows Git](https://git-scm.com/download). This installs the Git Bash command-line tool, which allows you to run the Bash script that flips the pages.
+- Open Git Bash and `cd` to your directory of generated PDFs. In Bash, use forward slashes in the directory path instead of back slashes (for example, `cd C:/docs-project-template-master/_site_pdf/docs-project-template-master_pdf`).
+- Copy the following block of code. Right-click in Git Bash and select paste.
+```
+for filename in *.pdf; do
+pdftk "$filename" cat 2-1 3-end output "$(date +%F)_$filename"
+done
+```
+- Each new PDF's filename is prepended with today's date.
+- Before you run `docfx pdf` again, delete the existing PDF(s).
 
 ## Credits
 The site template is based on [https://github.com/MathewSachin/docfx-tmpl](https://github.com/MathewSachin/docfx-tmpl).
