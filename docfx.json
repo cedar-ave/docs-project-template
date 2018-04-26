@@ -45,7 +45,10 @@
       {
         "files": [
           "images/**",
+          "media/**",
           "articles/images/**",
+          "articles/media/**",
+          "articles/**/images/**",
           "articles/**/media/**",
           "templates/media/**",
           "node-modules/font-awesome/css/font-awesome.min.css",
@@ -134,6 +137,10 @@
       {
         "files": [
           "images/**",
+          "media/**",
+          "articles/images/**",
+          "articles/media/**",
+          "articles/**/images/**",
           "articles/**/media/**",
           "node-modules/font-awesome/css/font-awesome.min.css",
           "node-modules/font-awesome/fonts/*"
