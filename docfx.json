@@ -45,6 +45,7 @@
       {
         "files": [
           "images/**",
+          "articles/images/**",
           "articles/**/media/**",
           "templates/media/**",
           "node-modules/font-awesome/css/font-awesome.min.css",
