@@ -1,3 +1,0 @@
-Health Catalyst and Healthcare Quality Catalyst are registered trademarks of Healthcare Quality Catalyst, LLC. Late-Binding Data Warehouse, Ignite Outcomes Improvement, Health Catalyst Data Operating System (DOS), Health Catalyst Analytics Platform (CAP), Health Catalyst Fabric, Atlas, EDW Console, Instant Data Entry Application (IDEA), Operations Console, SAM Designer (SAMD), and Source Mart Designer (SMD) are trademarks of Healthcare Quality Catalyst, LLC.
-
-Copyright © 2017–2018 Healthcare Quality Catalyst, LLC. All Rights Reserved.
