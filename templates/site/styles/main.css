@@ -22,6 +22,16 @@ b, optgroup, strong {
 }
 
 /* Headings */
+
+h1 {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  color: #006D9A;
+}
+
 article h1 {
   font-size: 36px;
   font-weight: 300;
@@ -132,7 +142,7 @@ article ol, ul {
 
 /* First-level bullets margin */
 article ul > li:before {
-  content: "•  ";
+  content: "\2022  ";
   display: table-cell;
   padding-right: 10px;
 }
@@ -146,7 +156,7 @@ article ul li ul li {
   display: table;
 }
 article ul li ul li:before {
-  content: "–  ";
+  content: "\2013  ";
   display: table-cell;
   padding-right: 15px;
 }
@@ -161,7 +171,7 @@ article ul li ul li:last-child {
 
 /* Third-level bullets */
 article ul li ul li ul li:before {
-  content: "- ";
+  content: "\002D ";
   display: table-cell;
   padding-right: 10px;
 }
@@ -175,7 +185,7 @@ table > tbody > tr > td > ul > li {
 
 /* Second level */
 table > tbody > tr > td > ul > li > ul > li {
-  content: "- ";
+  content: "\002D ";
   display: table;
   padding-right: 15px;
 }
@@ -323,6 +333,10 @@ td:nth-of-type(1) {
 
 .alert-danger {
   border-left: #00aeff solid 8px;
+}
+
+.label-info {
+  background-color: #00aeff;
 }
 
 /* Left-side color on landing page boxes (which are .alert only) */
