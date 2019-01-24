@@ -22,16 +22,6 @@ b, optgroup, strong {
 }
 
 /* Headings */
-
-h1 {
-  font-size: 36px;
-  font-weight: 300;
-  line-height: 1.2;
-  margin-top: 40px;
-  margin-bottom: 35px;
-  color: #006D9A;
-}
-
 article h1 {
   font-size: 36px;
   font-weight: 300;
@@ -130,7 +120,7 @@ article > ul li ul li ul li p {
   article h1:first-of-type:before {
     height: 0;
     margin-top: 0;
-  }  
+  }
 }
 
 /* Bullets setup */
@@ -149,6 +139,14 @@ article ul > li:before {
 
 article ul > li:last-child {
   padding-bottom: 10px;
+}
+
+/* Exclude these overrides from tab group headers */
+article .tabGroup > ul > li:before {
+  content: "";
+}
+article .tabGroup > ul > li:last-child {
+  padding-bottom: 0;
 }
 
 /* Second-level bullets */
@@ -304,7 +302,7 @@ td:nth-of-type(1) {
 }
 
 .alert-info h5:before {
-  content:"\f075";
+  content:"\f05a";
 }
 
 .alert-info {
@@ -328,7 +326,7 @@ td:nth-of-type(1) {
 }
 
 .alert-danger h5:before {
-  content:"\f05a";
+  content:"\f06a";
 }
 
 .alert-danger {
@@ -337,10 +335,11 @@ td:nth-of-type(1) {
 
 .label-info {
   background-color: #00aeff;
+  line-height: 2.25;
 }
 
 /* Left-side color on landing page boxes (which are .alert only) */
-#install-box, #user-box, #developer-box {
+#install-box, #user-box, #developer-box, #admin-box {
   margin-top: 25px;
 }
 
@@ -351,6 +350,11 @@ td:nth-of-type(1) {
 #developer-box
 {
   border-left: #f8961d solid 8px;
+}
+
+#admin-box
+{
+  border-left: #00a859 solid 8px;
 }
 
 /* Navbar */
@@ -411,7 +415,7 @@ td:nth-of-type(1) {
     background-color: transparent;
   /*    border-bottom: 4px solid #00AEFF;  */
   }
-  
+
   .navbar-inverse .navbar-nav > .open > a,
   .navbar-inverse .navbar-nav > .open > a:hover,
   .navbar-inverse .navbar-nav > .open > a:focus {
@@ -440,7 +444,7 @@ td:nth-of-type(1) {
   .navbar-inverse .navbar-link:hover {
     color: #e8f6ff;
   }
-  
+
   @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
       color: #ffffff;
@@ -567,8 +571,8 @@ body .toc {
 }
 
 /* Side TOC */
-.sidetoc, body .toc, .sidefilter, .sidetoggle { 
-  background-color: #F0F3F6 !important; 
+.sidetoc, body .toc, .sidefilter, .sidetoggle {
+  background-color: #F0F3F6 !important;
 }
 
 .sidetoc.shiftup {
@@ -595,21 +599,21 @@ body .toc {
 .affix ul > li > a:hover,
 .affix ul > li.active > a,
 .affix ul > li > a:focus {
-  color: #00aeff;                 
-  text-decoration: none;          
-  background-color: transparent;  
+  color: #00aeff;
+  text-decoration: none;
+  background-color: transparent;
   border-left-color: #00aeff;
 }
 
 /* All active links */
-.affix ul > li.active > a, 
+.affix ul > li.active > a,
 .affix ul > li.active:hover > a,
 .affix ul > li.active:focus >a {
   font-weight: 600;
 }
 
 /* Nested active links */
-.affix ul ul > li.active > a, 
+.affix ul ul > li.active > a,
 .affix ul ul > li.active:hover > a,
 .affix ul ul > li.active:focus > a {
   font-weight: 500;
@@ -754,7 +758,7 @@ body .toc {
 }
 
 /* Floating buttons
-   ------------------------------------------------------- 
+   -------------------------------------------------------
 .fab {
     width: 40px;
     height: 40px;
@@ -840,7 +844,7 @@ svg {
 /* Navbar underline */
 @media (min-width: 768px) {
   .navbar-nav>li.active>a {
-    border-bottom: solid 5px #00ABF9 !important; 
+    border-bottom: solid 5px #00ABF9 !important;
   }
 
   .navbar-nav>li>a {
@@ -884,3 +888,4 @@ svg {
   margin-right: -30px;
   margin-left: -30px;
 }
+
