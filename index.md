@@ -1,3 +1,6 @@
 # Home
+Quick build DocFx project
 
-Customizable home page
+```
+docfx build docfx.json --serve
+```
