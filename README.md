@@ -74,9 +74,6 @@ done
 - Each new PDF's filename is prepended with today's date.
 - Before you run `docfx pdf` again, delete the existing PDF(s).
 
-## Credits
-The site template is based on [https://github.com/MathewSachin/docfx-tmpl](https://github.com/MathewSachin/docfx-tmpl).
-
 # Reference
 
 ## Cheatsheets

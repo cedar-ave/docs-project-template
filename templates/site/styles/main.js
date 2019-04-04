@@ -1,57 +1,27 @@
-// Use container fluid
-var containers = $(".container");
-containers.removeClass("container");
-containers.addClass("container-fluid");
+function productSelected( selectObject ) {
+    window.location.href = selectObject.value;
+}
 
-// Navbar Hamburger
-$(function() {
-    $(".navbar-toggle").click(function() {
-        $(this).toggleClass("change");
-    })
-})
-
-// Select list to replace affix on small screens
-$(function () {
-    var navItems = $(".sideaffix .level1 > li");
-
-    if (navItems.length == 0) {
-        return;
+function appMenuShow( ) {
+    document.getElementById("appMenu").classList.toggle("docs-menu-show");
+    window.addEventListener("click", appMenuHide);
+}
+    
+function appMenuHide( event ) {
+    if (!event.target.matches('.docs-navbar-link.apps-menu')) {
+        document.getElementById("appMenu").classList.remove("docs-menu-show");
+        window.removeEventListener("click", appMenuHide);
     }
+} 
 
-    var selector = $("<select/>");
-    selector.addClass("form-control visible-sm visible-xs");
-    var form = $("<form/>");
-    form.append(selector);
-    form.prependTo("article");
+function devMenuShow( ) {
+      document.getElementById("devMenu").classList.toggle("docs-menu-show");
+    window.addEventListener("click", devMenuHide);
+}
 
-    selector.change(function() {
-        window.location = $(this).find("option:selected").val();
-    })
-
-    function work(item, level) {
-        var link = item.children('a');
-
-        var text = link.text();
-        
-        for (var i = 0; i < level; ++i) {
-            text = '&nbsp;&nbsp;' + text;
-        }
-
-        selector.append($('<option/>', {
-            'value': link.attr('href'),
-            'html': text
-        }));
-
-        var nested = item.children('ul');
-
-        if (nested.length > 0) {
-            nested.children('li').each(function () {
-                work($(this), level + 1);
-            });
-        }
+function devMenuHide( event ) {
+    if (!event.target.matches('.docs-navbar-link.dev-menu')) {
+        document.getElementById("devMenu").classList.remove("docs-menu-show");
+        window.removeEventListener("click", devMenuHide);
     }
-
-    navItems.each(function () {
-        work($(this), 0);
-    });
-})
+}

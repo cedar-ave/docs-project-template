@@ -1,6 +1,6 @@
  - name: Home
    href: ../index.md
- - name: First Guide
-   href: first-guide/
- - name: Second Guide
-   href: second-guide/
+ - name: DOS
+   href: dos/toc.yml
+ - name: Web apps
+   href: web-apps/toc.yml

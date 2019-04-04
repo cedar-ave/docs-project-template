@@ -1,25 +1,17 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-<nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {{>partials/logo}}
+<div class="docs-navbar">
+  <div class="docs-container">
+    <a class="docs-logo" href="https://healthcatalyst.com/docs">
+      <img src="{{_rel}}resources/docsLogo.svg" height="44px" width="336px" alt="Documentation Logo" class="docs-navbar-logo"/>
+    </a>
+    <div class="docs-navbar-left">
+      <div id="navbar"></div>
     </div>
-    <div class="collapse navbar-collapse" id="navbar">
-      <form class="form-inline navbar-right">
-        <a href="/articles/includes/support.html" class="btn btn-outline-success" type="button" id="help"><span class="far fa-question-circle"></span></a>
-      </form>
-      <form class="navbar-form navbar-right" role="search" id="search">
-        <div class="form-group">
-          <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-        </div>
-      </form>
+    <div class="docs-navbar-right">
+      <a href="https://www.google.com" class="docs-navbar-link">HC Community</a>
+      <span class="docs-navbar-divider"></span>
+      <a href="https://www.healthcatalyst.com/support" class="docs-navbar-link">Contact Support</a>
     </div>
   </div>
-</nav>
+</div>

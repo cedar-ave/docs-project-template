@@ -1,4 +1,7 @@
- - name: Articles
-   href: articles/
- - name: API
-   href: restapi/
+- name: Developers
+  dropdown: true
+  items:
+  - name: Services and REST API
+    href: restapi/
+  - name: Cashmere
+    href: https://cashmere.healthcatalyst.net/

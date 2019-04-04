@@ -54,7 +54,7 @@
           "node-modules/font-awesome/css/font-awesome.min.css",
           "node-modules/font-awesome/fonts/*",
           "web.config",
-          "resources/logo.svg",
+          "resources/docsLogo.svg",
           "resources/favicon.ico"
         ],
         "exclude": [
@@ -77,12 +77,12 @@
     "globalMetadata": {
       "_appTitle": "Articles",
       "_enableSearch": true,
-      "_appFooter": "Copyright © 2018 Health Catalyst",
+      "_appFooter": "Copyright © 2019 Health Catalyst",
       "_appLogoPath": "resources/logo.svg",
       "_appFaviconPath": "resources/favicon.ico",
       "_enableNewTab": true,
       "_disableContribution": true
-        },
+    },    
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
@@ -95,75 +95,5 @@
     "keepFileLink": false,
     "cleanupCacheHistory": false,
     "disableGitFeatures": false
-  },
-  "pdf": {
-    "content": [
-      {
-        "files": [
-          "api/**.yml",
-          "api-vb/**.yml"
-        ],
-        "exclude": [
-          "**/toc.yml",
-          "**/toc.md"
-        ]
-      },
-      {
-        "files": [
-          "articles/**/*.md"
-        ],
-        "exclude": [
-          "**/bin/**",
-          "**/obj/**",
-          "_site_pdf/**",
-          "**/toc.md",
-          "articles/toc.yml",
-          "articles/**/*.yml"
-        ]
-      },
-      {
-        "files": [ 
-          "pdf/toc.yml",
-          "pdf/**/toc.yml",
-          "pdf/**/**/toc.yml"
-        ]
-      }
-    ],
-    "template": [
-        "pdf.default",
-        "templates/pdf"
-        ], 
-    "resource": [
-      {
-        "files": [
-          "images/**",
-          "media/**",
-          "articles/images/**",
-          "articles/media/**",
-          "articles/**/images/**",
-          "articles/**/media/**",
-          "node-modules/font-awesome/css/font-awesome.min.css",
-          "node-modules/font-awesome/fonts/*"
-        ],
-        "exclude": [
-          "**/bin/**",
-          "**/obj/**",
-          "_site_pdf/**"
-        ]
-      }
-    ],
-    "overwrite": [
-      {
-        "files": [
-          "apidoc/**.md"
-        ],
-        "exclude": [
-          "**/bin/**",
-          "**/obj/**",
-          "_site_pdf/**"
-        ]
-      }
-    ],
-    "dest": "_site_pdf"
   }
 }
