@@ -60,23 +60,6 @@ The following instructions apply to Windows, but DocFx and this project are also
 ### Walkthroughs
 See [DocFx walkthroughs](https://dotnet.github.io/docfx/tutorial/walkthrough/walkthrough_overview.html).
 
-## Complication with the PDF title pages
-The table of contents is always page 1. If you want a title page, create the title page as page 2 and use this script to flip the them.
-- Install [PDFtk Free](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit). On the final window of the installer, choose not to open the program.
-- Install [Windows Git](https://git-scm.com/download). This installs the Git Bash command-line tool, which allows you to run the Bash script that flips the pages.
-- Open Git Bash and `cd` to your directory of generated PDFs. In Bash, use forward slashes in the directory path instead of back slashes (for example, `cd C:/docs-project-template-master/_site_pdf/docs-project-template-master_pdf`).
-- Copy the following block of code. Right-click in Git Bash and select paste.
-```
-for filename in *.pdf; do
-pdftk "$filename" cat 2-1 3-end output "$(date +%F)_$filename"
-done
-```
-- Each new PDF's filename is prepended with today's date.
-- Before you run `docfx pdf` again, delete the existing PDF(s).
-
-## Credits
-The site template is based on [https://github.com/MathewSachin/docfx-tmpl](https://github.com/MathewSachin/docfx-tmpl).
-
 # Reference
 
 ## Cheatsheets
