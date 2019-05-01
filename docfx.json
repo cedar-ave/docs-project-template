@@ -36,7 +36,8 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "_site/**",
+          "articles/**/cover.md"
         ]
       }
     ],
@@ -52,7 +53,7 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "PlatformDocs/wwwroot"
         ]
       }
     ],
