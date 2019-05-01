@@ -31,7 +31,6 @@
         "files": [
           "articles/**/**.md",
           "articles/**/toc.yml",
-          "articles/**/**/toc.yml",
           "toc.yml",
           "*.md"
         ],
@@ -44,13 +43,7 @@
     "resource": [
       {
         "files": [
-          "images/**",
-          "media/**",
-          "articles/images/**",
-          "articles/media/**",
-          "articles/**/images/**",
           "articles/**/media/**",
-          "templates/media/**",
           "node-modules/font-awesome/css/font-awesome.min.css",
           "node-modules/font-awesome/fonts/*",
           "web.config",
@@ -77,7 +70,7 @@
     "globalMetadata": {
       "_appTitle": "Articles",
       "_enableSearch": true,
-      "_appFooter": "Copyright © 2018 Health Catalyst",
+      "_appFooter": "Copyright © 2019 Health Catalyst",
       "_appLogoPath": "resources/logo.svg",
       "_appFaviconPath": "resources/favicon.ico",
       "_enableNewTab": true,
@@ -110,22 +103,15 @@
       },
       {
         "files": [
-          "articles/**/*.md"
+          "articles/**/*.md",
+          "articles/**/*.yml"
         ],
         "exclude": [
           "**/bin/**",
           "**/obj/**",
           "_site_pdf/**",
           "**/toc.md",
-          "articles/toc.yml",
-          "articles/**/*.yml"
-        ]
-      },
-      {
-        "files": [ 
-          "pdf/toc.yml",
-          "pdf/**/toc.yml",
-          "pdf/**/**/toc.yml"
+          "articles/toc.yml"
         ]
       }
     ],
@@ -136,11 +122,7 @@
     "resource": [
       {
         "files": [
-          "images/**",
-          "media/**",
-          "articles/images/**",
-          "articles/media/**",
-          "articles/**/images/**",
+          "resources/**",
           "articles/**/media/**",
           "node-modules/font-awesome/css/font-awesome.min.css",
           "node-modules/font-awesome/fonts/*"

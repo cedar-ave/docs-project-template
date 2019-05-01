@@ -1,53 +1,68 @@
-h1 {
-    font-weight: 200;
+#cover {
+    border: none;
+    padding-bottom: 150px;
+    width: 300px;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Segoe UI' !important;
     page-break-after: avoid;
+    text-transform: none;
+    page-break-after: avoid !important;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0px;
 }
 
 h2 {
-    font-size: 1.5em;
-    color: #007bb8;
+    font-size: 24px;
 }
 
-h2, h3, h4, h5, h6 {
-    font-weight: 500;
-    font-family: 'Segoe UI' !important;
-    text-transform: none;
-    page-break-after: avoid;   
-/*    letter-spacing: 0px;*/
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
 }
 
 .pb_after_avoid {
     page-break-after: avoid !important;
 }
 
-h3 {
-    font-size: 1.25em;
-}
-
-h4 {
-    color: #007bb8;
-    font-size: 1.15em;
-}
-
-h5 {
-    font-size: 1em;
-    font-weight: 600;
-}
-
-h6 {
-    font-size: 1em;
-    color: #007bb8;
-    font-weight: 600;
-}
-
 html {
     padding: 50px;
 }
 
-b,
-strong {
+b, strong {
     font-weight: 600 !important;
+}
+
+code, pre, pre code {
+    font-family: Consolas, monaco, monospace !important;
+    background-color: #f1f1f1 !important;
+}
+
+code {
+    color: #a94c9d;
+    border-radius: 3px;
+    padding: 2px 7px;
+    border: none;
+    font-size: .8em;
+}
+
+pre, pre code {
+    border: 0px;
+    border-radius: 6px;
+    padding: 15px
 }
 
 img {
@@ -60,32 +75,91 @@ a {
     color: #007bb8; 
 }
 
+/* Tables */
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: none !important;
+}
+
 table th {
-    text-align: left;
-    font-size: .8em;
     text-transform: none;
     letter-spacing: 0px;
     font-weight: 600;
-    color: #384655;
+    color: #006D9A;
+    font-size: 14px;
+    padding-left: 10px;
+    border-style: none !important;
 }
 
 table>tbody>tr>td,
 table>tbody>tr>th,
 table>tfoot>tr>td,
-table>tfoot>tr>th,
-table>thead>tr>td,
-table>thead>tr>th {
-  vertical-align: top;
+table>tfoot>tr>th {
+    vertical-align: top;
 }
 
 table>thead>tr>th {
     padding: .75em;
-    vertical-align: bottom;
-    border-width: 0 0 1px;
-    border-style: solid;
-    border-color: #e3e3e3;
+    padding-left: 1em;
+    border-bottom: 1px solid #D7DDE4 !important;
+}
+
+table>tbody>tr {
+    border-bottom: 1px solid #D7DDE4 !important;
+}
+
+table>tbody>tr>td {
+    border-bottom: 1px solid #D7DDE4 !important;
 }
 
 td:nth-of-type(1) {
-    font-weight: 600;
+    font-weight: 700;
 }
+
+/* Alert callouts */
+.INFO, .TIP, .NOTE, .WARNING, .IMPORTANT, .DANGER {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    background: #E0F5FF;
+    border-radius: 6px;
+    color: black;
+    margin-top: 20px;
+    margin-top: 20px;
+    page-break-inside: avoid !important;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.INFO h5, .TIP h5, .NOTE h5, .WARNING h5, .IMPORTANT h5, .DANGER h5 {
+    font-weight: 800;
+    font-size: .9em;
+    border-color: transparent;
+    color: black;
+    background: #E0F5FF;
+    margin-bottom: 0px;
+}
+
+.INFO h5:before, .TIP h5:before, .NOTE h5:before, .WARNING h5:before, .IMPORTANT h5:before, .DANGER h5:before {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    padding-right: 3px;
+    font-size: .9em;
+    line-height: 1.6;
+    color: black;
+}
+
+.INFO h5:before, .TIP h5:before, .NOTE h5:before {
+    content:"\f05a";
+}
+
+.WARNING h5:before, .IMPORTANT h5:before {
+    content:"\f071";
+}
+
+.DANGER h5:before{
+    content:"\f06a";
+}
+

@@ -8,6 +8,8 @@
 /**/obj/
 _site
 _site_pdf
+node_modules/
+templates/plugins/
 
 # User-specific files
 *.pdf

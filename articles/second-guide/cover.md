@@ -1,0 +1,4 @@
+---
+documentType: cover
+---
+# Second Guide
