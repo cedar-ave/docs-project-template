@@ -16,7 +16,6 @@
             </div>
         </div>
         <div class="docs-subnav-right" id="subnav-right">
-            <span class="docs-subnav-search-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
             <form action="search.html" class="form-inline navbar-right">
                 <div class="tipue_search_group">
                     <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters"

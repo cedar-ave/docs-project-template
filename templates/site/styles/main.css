@@ -978,7 +978,7 @@ body .toc {
 	margin-left: auto;
 	display: flex;
 	align-items: center;
-	width: 200px;
+	width: 230px;
 	padding-left: 20px;
 }
 
@@ -1108,3 +1108,17 @@ a.anchor {
 		display: none;
 	}
 }
+
+#tipue_search_input {
+  width: 125px;
+  height: 40px;
+  border-bottom: 1px solid #E1E3E3;
+  background-color: #f6f7f8;
+}
+
+.tipue_search_button {
+  position: absolute;
+  height: 40px;
+  background-color: #f6f7f8;
+}
+
