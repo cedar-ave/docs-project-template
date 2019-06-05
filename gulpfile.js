@@ -57,13 +57,8 @@ gulp.task('copy-font-awesome-styles', function () {
         .pipe(gulp.dest('./_site/styles'));
 });
 
-gulp.task('copy-lightbox-css', function () {
-    gulp.src('./node_modules/lightbox2/dist/css/**')
-        .pipe(gulp.dest('./_site/styles'));
-});
-
-gulp.task('copy-lightbox-js', function () {
-    gulp.src('./node_modules/lightbox2/dist/js/**')
+gulp.task('copy-lightbox', function () {
+    gulp.src('./node_modules/lightbox2/dist/**')
         .pipe(gulp.dest('./_site/styles'));
 });
 
@@ -77,5 +72,5 @@ gulp.task('copy-tipue', function () {
         .pipe(gulp.dest('./_site/tipuesearch'));
 });
 
-gulp.task('default', ['sass', 'copy-assets', 'copy-open-sans-fonts', 'copy-open-sans-styles', 'copy-font-awesome-fonts', 'copy-font-awesome-styles', 'copy-lightbox-css', 'copy-lightbox-js', 'copy-img', 'copy-tipue']);
+gulp.task('default', ['sass', 'copy-assets', 'copy-open-sans-fonts', 'copy-open-sans-styles', 'copy-font-awesome-fonts', 'copy-font-awesome-styles', 'copy-lightbox', 'copy-img', 'copy-tipue']);
 gulp.task('run', ['sass:watch','docfx:watch']);
