@@ -4,3 +4,6 @@
 <script type="text/javascript" src="{{_rel}}styles/docfx.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/lightbox.min.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/main.js"></script>
+<script type="text/javascript" src="{{_rel}}tipuesearch/tipuesearch_content.js"></script>
+<script type="text/javascript" src="{{_rel}}tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="{{_rel}}tipuesearch/tipuesearch.min.js"></script>

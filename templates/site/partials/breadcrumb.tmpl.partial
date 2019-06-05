@@ -16,10 +16,11 @@
       </div>
 		</div>
 		<div class="docs-subnav-right" id="subnav-right">
-			<span class="docs-subnav-search-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
-			<form role="search" id="search">
-				<input type="text" id="search-query" placeholder="Search">
-      </form>
+			<form>
+    <div class="tipue_search_group">
+    <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><button type="submit" class="tipue_search_button"><div class="tipue_search_icon">&#9906;</div></button>
+    </div>
+    </form>
 		</div>
 	</div>
 </div>

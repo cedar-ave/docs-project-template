@@ -72,5 +72,10 @@ gulp.task('copy-img', function () {
         .pipe(gulp.dest('./_site/images'));
 });
 
-gulp.task('default', ['sass', 'copy-assets', 'copy-open-sans-fonts', 'copy-open-sans-styles', 'copy-font-awesome-fonts', 'copy-font-awesome-styles', 'copy-lightbox-css', 'copy-lightbox-js', 'copy-img']);
+gulp.task('copy-tipue', function () {
+    gulp.src('./templates/tipuesearch/**')
+        .pipe(gulp.dest('./_site/tipuesearch'));
+});
+
+gulp.task('default', ['sass', 'copy-assets', 'copy-open-sans-fonts', 'copy-open-sans-styles', 'copy-font-awesome-fonts', 'copy-font-awesome-styles', 'copy-lightbox-css', 'copy-lightbox-js', 'copy-img', 'copy-tipue']);
 gulp.task('run', ['sass:watch','docfx:watch']);
