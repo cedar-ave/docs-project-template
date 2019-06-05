@@ -1,29 +1,8 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": [
-            "src/**.csproj"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "_site/**"
-          ]
-        }
-      ],
-      "dest": "api",
-      "disableGitFeatures": false
-    }
-  ],
   "build": {
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md",
-          "restapi/**.yml",
           "restapi/**"
         ]
       },
@@ -37,22 +16,18 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "_site/**",
+          "readme.md"
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "images/**",
-          "media/**",
-          "articles/images/**",
-          "articles/media/**",
-          "articles/**/images/**",
           "articles/**/media/**",
-          "templates/media/**",
           "node-modules/font-awesome/css/font-awesome.min.css",
           "node-modules/font-awesome/fonts/*",
+          "templates/site/images/**",
           "web.config",
           "resources/docsLogo.svg",
           "resources/favicon.ico"
@@ -63,34 +38,26 @@
         ]
       }
     ],
-    "overwrite": [
-      {
-        "files": [
-          "apidoc/**.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**"
-        ]
-      }
-    ],
     "globalMetadata": {
-      "_appTitle": "Articles",
       "_enableSearch": true,
       "_appFooter": "Copyright © 2019 Health Catalyst",
       "_appLogoPath": "resources/logo.svg",
       "_appFaviconPath": "resources/favicon.ico",
       "_enableNewTab": true,
-      "_disableContribution": true
-    },    
+      "_disableContribution": true,
+      "_homePath": "/"
+    },
+    "fileMetadata": {
+      "_noindex": {
+        "articles/includes/*": true,
+        "readme.md": true
+      }
+    },
     "dest": "_site",
-    "globalMetadataFiles": [],
-    "fileMetadataFiles": [],
     "template": [
       "default",
       "templates/site"
     ],
-    "postProcessors": [],
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": false,

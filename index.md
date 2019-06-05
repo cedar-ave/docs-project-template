@@ -1,6 +1,6 @@
 # Home
 Quick build DocFx project
 
-```
-docfx build docfx.json --serve
-```
+First time - run `npm install`
+
+Every time - run `npm run build`

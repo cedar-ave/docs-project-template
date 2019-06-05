@@ -556,10 +556,6 @@ body .toc {
 	background-color: white;
 }
 
-.sidetoc.shiftup {
-  bottom: 0px;
-}
-
 .sidetoc, .sidefilter {
   border-left: none;
   border-right: none;
@@ -925,6 +921,12 @@ body .toc {
 	min-width: 30px;
 }
 
+.docs-subnav-breadcrumb-home {
+  font-size: 20px;
+  color: #00aeff;
+  padding-bottom: 2px;
+}
+
 .docs-subnav-breadcrumb-current > ul > li + li::before {
   font-family: "FontAwesome";
   content: "\f054";
@@ -1105,5 +1107,4 @@ a.anchor {
 	.docs-subnav-right {
 		display: none;
 	}
-
 }

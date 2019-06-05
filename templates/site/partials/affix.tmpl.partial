@@ -7,13 +7,13 @@
     <div class="contribution">
       <ul class="nav">
         <li>
-          <a class="contribution-link" href="https://www.google.com"><span class="fa fa-comment" style="padding-right: 10px;"></span>Share Product Feedback</a>
+          <a class="contribution-link" href=""><span class="fa fa-comment" style="padding-right: 10px;"></span>Share Product Feedback</a>
         </li>
         <li>
-          <a class="contribution-link" href="https://www.google.com"><span class="fa fa-users" style="padding-right: 10px;"></span>Ask the Community</a>
+          <a class="contribution-link" href=""><span class="fa fa-users" style="padding-right: 10px;"></span>Ask the Community</a>
         </li>
         <li>
-          <a class="contribution-link" href="https://www.google.com"><span class="fa fa-file-pdf-o" style="padding-right: 10px;"></span>Download PDFs</a>
+          <a class="contribution-link" href=""><span class="fa fa-file-pdf-o" style="padding-right: 10px;"></span>Download PDFs</a>
         </li>
       </ul>
     </div>

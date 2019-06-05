@@ -2,16 +2,16 @@
 
 <div class="docs-navbar">
   <div class="docs-container">
-    <a class="docs-logo" href="https://healthcatalyst.com/docs">
+    <a class="docs-logo" href="">
       <img src="{{_rel}}resources/docsLogo.svg" height="44px" width="336px" alt="Documentation Logo" class="docs-navbar-logo"/>
     </a>
     <div class="docs-navbar-left">
       <div id="navbar"></div>
     </div>
     <div class="docs-navbar-right">
-      <a href="https://www.google.com" class="docs-navbar-link">HC Community</a>
+      <a href="" class="docs-navbar-link">HC Community</a>
       <span class="docs-navbar-divider"></span>
-      <a href="https://www.healthcatalyst.com/support" class="docs-navbar-link">Contact Support</a>
+      <a href="" class="docs-navbar-link">Contact Support</a>
     </div>
   </div>
 </div>
