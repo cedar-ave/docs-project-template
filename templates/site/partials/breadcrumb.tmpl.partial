@@ -1,26 +1,30 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
 <div class="docs-subnav">
-	<div class="docs-container">
-		<div class="docs-subnav-left" id="subnav-left">
-			<div class="docs-subnav-select-container">
-				<span class="docs-subnav-select-caret"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-				<select id="version" class="docs-subnav-select" style="display: none">
-        </select>
-			</div>
-			<span class="docs-subnav-breadcrumb-divider"><i class="fa fa-chevron-right" aria-hidden="true"></i></span><span class="docs-subnav-breadcrumb-home"><a href="{{_homePath}}"><i class="fa fa-home" aria-hidden="true"></i></a></span><span class="docs-subnav-breadcrumb-divider"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-			<div class="docs-subnav-breadcrumb-current" id="breadcrumb">
-        <ul>
-          <li>{{_tocTitle}}</li>
-        </ul>
-      </div>
-		</div>
-		<div class="docs-subnav-right" id="subnav-right">
-			<form>
-    <div class="tipue_search_group">
-    <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><button type="submit" class="tipue_search_button"><div class="tipue_search_icon">&#9906;</div></button>
+    <div class="docs-container">
+        <div class="docs-subnav-left" id="subnav-left">
+            <div class="docs-subnav-select-container">
+                <span class="docs-subnav-select-caret"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                <select id="version" class="docs-subnav-select" style="display: none">
+                </select>
+            </div>
+            <span class="docs-subnav-breadcrumb-divider"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+            <div class="docs-subnav-breadcrumb-current" id="breadcrumb">
+                <ul>
+                    <li>{{_tocTitle}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="docs-subnav-right" id="subnav-right">
+            <span class="docs-subnav-search-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+            <form action="search.html" class="form-inline navbar-right">
+                <div class="tipue_search_group">
+                    <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters"
+                        required><button type="submit" class="tipue_search_button">
+                        <div class="tipue_search_icon">&#9906;</div>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-    </form>
-		</div>
-	</div>
 </div>
