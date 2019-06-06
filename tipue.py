@@ -15,14 +15,13 @@ for root, dirs, files in os.walk(path, topdown=False):
                 firstLine = False
             else:
                 searchFile.write( ',\n' );
-
+            fileString = os.path.join(root, name)
             contentFile = open( os.path.join(root, name), 'r' )
             fileTitle = '';
             fileBody = '';
-##        fileURL = root
-            fileURL = root.replace( "\\", "/" ) + "/index.html"
-##        fileURL = fileURL.replace( "\\" + name, "" ) + "/index.html"
-        
+            ##fileURL = root
+            fileURL = fileString.replace( "\\", "/" )
+            fileURL = fileURL.replace( ".md", ".html" )
             for line in contentFile:
                 if "title:" in line:
                     fileTitle = line.replace( "title:", "" )
