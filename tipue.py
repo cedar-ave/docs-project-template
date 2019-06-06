@@ -2,7 +2,7 @@ import os
 
 path = 'articles'
 
-searchFile = open( 'tipuesearch_content.js', 'w' )
+searchFile = open( 'tipuesearch/tipuesearch_content.js', 'w' )
 searchFile.write( 'var tipuesearch = {"pages": [' )
 searchFile.write( '\n' )
 
