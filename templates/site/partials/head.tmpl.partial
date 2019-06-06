@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="{{_rel}}styles/docfx.css">
   <link rel="stylesheet" href="{{_rel}}styles/font-awesome.min.css">
   <link rel="stylesheet" href="{{_rel}}styles/lightbox.min.css">
-  <link rel="stylesheet" href="{{_rel}}../tipuesearch/tipuesearch.css">
+  <link rel="stylesheet" href="{{_rel}}tipuesearch/tipuesearch.css">
   <link rel="stylesheet" href="{{_rel}}open-sans.css">  
   <link rel="stylesheet" href="{{_rel}}styles/main.css">
   <meta property="docfx:navrel" content="{{_navRel}}">
