@@ -30,7 +30,8 @@
           "templates/site/images/**",
           "web.config",
           "resources/docsLogo.svg",
-          "resources/favicon.ico"
+          "resources/favicon.ico",
+          "search.html"
         ],
         "exclude": [
           "obj/**",
