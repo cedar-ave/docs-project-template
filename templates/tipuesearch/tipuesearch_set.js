@@ -51,7 +51,8 @@ var tipuesearch_related = {'Related': [
      {'search': 'tipue', 'related': 'Blog'},
      {'search': 'tipue', 'related': 'Support'},
      {'search': 'tipue search', 'related': 'Demo', 'include': 1},
-     {'search': 'tipue search', 'related': 'Support'}
+     {'search': 'tipue search', 'related': 'Support'},
+     {'search': 'atlas', 'related': 'dos'}
 ]};
 
 
