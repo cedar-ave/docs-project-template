@@ -63,7 +63,7 @@ gulp.task('copy-lightbox-js', function () {
 });
 
 gulp.task('copy-lightbox-css', function () {
-    gulp.src('./node_modules/lightbox2/dist/js/**')
+    gulp.src('./node_modules/lightbox2/dist/css/**')
         .pipe(gulp.dest('./_site/styles'));
 });
 
