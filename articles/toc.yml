@@ -1,6 +1,8 @@
  - name: Home
    href: ../index.md
- - name: DOS
-   href: dos/toc.yml
- - name: Web apps
-   href: web-apps/toc.yml
+ - name: Category 1
+   href: Category-1/toc.yml
+ - name: Category 2
+   href: Category-2/toc.yml
+ - name: Mixed Category
+   href: Mixed-Category/
